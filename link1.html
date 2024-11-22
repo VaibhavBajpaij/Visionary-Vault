@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCure: A Design Thinking Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0px;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background: rgb(238,240,5);
+background: linear-gradient(90deg, rgba(238,240,5,1) 3%, rgba(87,180,58,1) 35%, rgba(9,135,236,1) 75%);
+            /* Header background color */
+            color: white;
+            /* Header text color */
+        }
+
+        .logo img {
+            width: 100px;
+            /* Adjust as needed */
+        }
+
+        .navbar {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            /* Change link color */
+            transition: color 0.3s;
+            /* Transition for hover effect */
+        }
+
+        .navbar a:hover {
+            color: #ffc107;
+            /* Hover color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin: 10px 0 20px 20px;
+        }
+
+        ol {
+            margin: 10px 0 20px 20px;
+        }
+
+        .feature-section,
+        .project-structure,
+        .installation {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        code {
+            background-color: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .conclusion {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-top: 20px;
+            
+           
+            
+        }
+
+        .image-section img {
+            width: 70%;
+            margin: 1%;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="https://www.niet.co.in/" target="_blank">
+            <div class="logo left-logo">
+                <img  src="new-logo.png" alt="Logo 1">
+            </div>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="front.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+            </ul>
+        </nav>
+        <div class="logo right-logo">
+            <img style="border-radius: 45px;" src="logo2.png" alt="Logo 2">
+        </div>
+    </header>
+    <div class="container">
+        <h1>CodeCure: A Design Thinking Journey</h1>
+
+        <h2>Empathize</h2>
+        <p>To start with, the development of CodeCure was grounded in empathy. The team engaged with patients, doctors,
+            and healthcare professionals to understand their pain points and needs. Through interviews, surveys, and
+            direct interactions, we identified key issues: difficulty in booking appointments, managing medical records,
+            and predicting diseases based on symptoms. This stage was crucial in gaining deep insights into the
+            challenges faced by both patients and doctors.</p>
+
+        <h2>Define</h2>
+        <p>Armed with insights from the empathy stage, we clearly defined the core problems:</p>
+        <ul>
+            <li>Patients struggle to book appointments efficiently and manage their healthcare needs.</li>
+            <li>Doctors need a streamlined way to manage their appointments and patient information.</li>
+            <li>There is a need for a system that can predict diseases based on symptoms to aid early diagnosis and
+                treatment.</li>
+            <li>There is a lack of accessible, reliable information on health-related topics for patients.</li>
+        </ul>
+
+        <h2>Ideate</h2>
+        <p>The ideation phase involved brainstorming sessions where we generated a plethora of ideas to address the
+            defined problems. We encouraged creative thinking and came up with several potential features, such as:</p>
+        <ul>
+            <li>A user-friendly registration process for both patients and doctors.</li>
+            <li>An intuitive appointment booking system.</li>
+            <li>Integration of a machine learning model to predict diseases based on symptoms.</li>
+            <li>A blog section to provide valuable health-related information.</li>
+            <li>Features to track appointments and update profiles.</li>
+        </ul>
+
+        <h2>Prototype</h2>
+        <p>Next, we moved into the prototyping phase, where we developed a tangible version of the CodeCure application:
+        </p>
+        <ul>
+            <li><b>User Registration</b>: A simple yet secure registration system for patients and doctors.</li>
+            <li><b>Login and Logout</b>: Secure user sessions to ensure personalized and safe access.</li>
+            <li><b>Appointment Booking</b>: A streamlined interface for booking and managing appointments.</li>
+            <li><b>Disease Prediction</b>: Implemented a machine learning model using a Decision Tree Classifier to
+                predict diseases based on symptoms.</li>
+            <li><b>Blog Section</b>: A platform for blog posts covering various health topics, such as Transforming
+                Healthcare and Holistic Health.</li>
+        </ul>
+
+        <h2>Test</h2>
+        <p>The final stage involved rigorous testing of the prototype with real users:</p>
+        <ul>
+            <li><b>User Feedback</b>: Collected feedback from patients and doctors on the usability and functionality of
+                the system.</li>
+            <li><b>Iterative Improvements</b>: Based on feedback, we refined the features, improved the user interface,
+                and ensured the system was robust and reliable.</li>
+            <li><b>Final Deployment</b>: After thorough testing and refinements, the application was ready for
+                deployment.</li>
+        </ul>
+
+        <h2>Project Structure</h2>
+        <div class="project-structure">
+            <ul>
+                <li><b>app.py</b>: The main Flask application file containing routes and functionality.</li>
+                <li><b>templates</b>: HTML templates for rendering web pages.</li>
+                <li><b>static</b>: Static files such as CSS, images, and data.</li>
+                <li><b>database.db</b>: SQLite database file storing user and appointment information.</li>
+                <li><b>Data</b>: CSV files for training and testing the disease prediction model.</li>
+            </ul>
+        </div>
+
+        <h2>Installation and Running</h2>
+        <div class="installation">
+            <ol>
+                <a href="https://github.com/VaibhavBajpaij/CodeCure-Healthcare-Website-GFGXNIET" target="_blank"><li>Clone the repository:
+                    <pre><code>git clone https://github.com/VaibhavBajpaij/CodeCure-Healthcare-Website-GFGXNIET</code></pre>
+                </li></a>
+                <li>Install dependencies:
+                    <pre><code>pip install -r requirements.txt</code></pre>
+                </li>
+                <li>Run the application:
+                    <pre><code>python app.py</code></pre>
+                </li>
+            </ol>
+        </div>
+
+        <h2>Dependencies</h2>
+        <ul>
+            <li>Flask</li>
+            <li>Flask-SQLAlchemy</li>
+            <li>Plotly</li>
+            <li>NumPy</li>
+            <li>TensorFlow</li>
+            <li>Scikit-Learn</li>
+        </ul>
+
+        <h2>Images</h2>
+        <div class="image-section"> <!-- <img src="image1.png" alt="Image 1">--> <img
+                src="ourblog.png" alt="Image 2"> <img src="provide.png" alt="Image 3"> </div>
+
+        <div class="conclusion">
+            <h2>Conclusion</h2>
+            <p>The journey of developing CodeCure through design thinking ensured that we remained user-centric,
+                addressing real needs with innovative solutions. This approach allowed us to create a comprehensive
+                healthcare platform that not only meets current needs but is also adaptable for future enhancements.</p>
+            <p>By following the design thinking process, CodeCure exemplifies how empathetic, creative, and iterative
+                problem-solving can lead to meaningful and impactful innovations in healthcare technology. If you have
+                any more questions or need further details, feel free to ask!</p>
+        </div>
+    </div>
+</body>
+
+</html>

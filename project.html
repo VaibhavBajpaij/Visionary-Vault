@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background: rgb(238, 240, 5);
+            background: linear-gradient(90deg, rgba(238, 240, 5, 1) 3%, rgba(87, 180, 58, 1) 35%, rgba(9, 135, 236, 1) 75%);
+            /* Header background color */
+            color: white;
+            /* Header text color */
+        }
+
+        .logo img {
+            width: 100px;
+            /* Adjust as needed */
+        }
+
+        .navbar {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            /* Change link color */
+            transition: color 0.3s;
+            /* Transition for hover effect */
+        }
+
+        .navbar a:hover {
+            color: #ffc107;
+            /* Hover color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="https://www.niet.co.in/" target="_blank">
+            <div class="logo left-logo">
+                <img src="new-logo.png" alt="Logo 1">
+            </div>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="front.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+
+            </ul>
+        </nav>
+        <div class="logo right-logo">
+            <img style="border-radius: 45px;" src="logo2.png" alt="Logo 2">
+        </div>
+    </header>
+    <div class="card-container">
+        <div class="card">
+            <a href="link1.html">
+                <img src="image1.png" alt="Image1" class="card-image">
+            </a>
+            <div class="card-content">
+                <h3 class="card-heading">About</h3>
+                <p class="card-name">Vaibhav Bajpai</p>
+                <p class="card-year">Year of Graduation: 2026</p>
+                <p class="card-branch">Branch:Information Technology</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="link2.html">
+                <img src="image2.jpg" alt="Image 2" class="card-image">
+            </a>
+            <div class="card-content">
+                <h3 class="card-heading">About</h3>
+                <p class="card-name">Jane Smith</p>
+                <p class="card-year">Year of Graduation: 2024</p>
+                <p class="card-branch">Branch: Electrical Engineering</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="link3.html">
+                <img src="image3.jpg" alt="Image 3" class="card-image">
+            </a>
+            <div class="card-content">
+                <h3 class="card-heading">About</h3>
+                <p class="card-name">Alice Johnson</p>
+                <p class="card-year">Year of Gradation: 2025</p>
+                <p class="card-branch">Branch: Mechanical Engineering</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

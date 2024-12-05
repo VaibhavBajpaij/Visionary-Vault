@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Learning Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0px;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background: linear-gradient(90deg, rgba(238, 240, 5, 1) 3%, rgba(87, 180, 58, 1) 35%, rgba(9, 135, 236, 1) 75%);
+            color: white;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        .navbar {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffc107;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin: 10px 0 20px 20px;
+        }
+
+        .feature-section,
+        .installation {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            overflow-x: auto;
+        }
+
+        code {
+            background-color: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .conclusion {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="https://www.niet.co.in/" target="_blank">
+            <div class="logo left-logo">
+                <img src="new-logo.png" alt="Logo 1">
+            </div>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="front.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+            </ul>
+        </nav>
+        <div class="logo right-logo">
+            <img style="border-radius: 45px;" src="logo2.png" alt="Logo 2">
+        </div>
+    </header>
+    <div class="container">
+        <h1>Sign Language Learning Web App</h1>
+
+        <h2>1. Empathize: Understand Users' Needs</h2>
+        <p>Identify Target Users: Deaf and mute individuals who want to learn sign language.</p>
+        <p>User Research: Conduct surveys or interviews to understand their challenges in learning sign language.</p>
+        <p>Key Insights: Real-time feedback and interactive learning are crucial.</p>
+
+        <h2>2. Define: Clarify the Problem</h2>
+        <p>Problem Statement: Deaf and mute individuals need an interactive and user-friendly platform to learn sign
+            language effectively.</p>
+        <h3>Requirements:</h3>
+        <ul>
+            <li>Real-time gesture recognition.</li>
+            <li>Step-by-step learning modules for alphabets and words.</li>
+            <li>Performance review and feedback.</li>
+        </ul>
+
+        <h2>3. Ideate: Generate Solutions</h2>
+        <p>Brainstorming: Generate ideas for interactive features, such as using a webcam for gesture recognition and
+            providing immediate feedback.</p>
+        <p>Prioritization: Decide on core features like learning modules, gesture recognition, and performance review.
+        </p>
+
+        <h2>4. Prototype: Create Solutions</h2>
+        <div class="feature-section">
+            <h3>Front-End Development:</h3>
+            <ul>
+                <li>Build interactive interfaces using HTML, CSS, and JavaScript.</li>
+                <li>Incorporate animations for an engaging learning experience.</li>
+            </ul>
+        </div>
+        <div class="feature-section">
+            <h3>Back-End Development:</h3>
+            <ul>
+                <li>Use Flask framework to integrate front-end and back-end seamlessly.</li>
+                <li>Develop APIs for handling user data and providing feedback.</li>
+            </ul>
+        </div>
+        <div class="feature-section">
+            <h3>Machine Learning Integration:</h3>
+            <ul>
+                <li>Train and integrate the ML model (keras_model.h5) to recognize sign language gestures using
+                    TensorFlow and Keras.</li>
+                <li>Use OpenCV for video processing to capture and interpret gestures.</li>
+            </ul>
+        </div>
+
+        <h2>5. Test: Evaluate Solutions</h2>
+        <p>User Testing: Conduct usability tests with actual users to gather feedback on the learning modules and
+            gesture recognition accuracy.</p>
+        <p>Iterate: Refine the application based on user feedback, improving the interface and ML model accuracy.</p>
+
+        <h2>Example Learning Flow:</h2>
+        <h3>Select Learning Module:</h3>
+        <p>Users choose between "Learn Alphabets" and "Learn Words".</p>
+        <h3>Gesture Recognition:</h3>
+        <p>The app captures gestures via webcam and uses the ML model to interpret them.</p>
+        <h3>Learning Feedback:</h3>
+        <ul>
+            <li>For alphabets: Displays recognized letters and suggests corrections.</li>
+            <li>For words: Guides users through word gestures step-by-step with visual aids.</li>
+        </ul>
+        <h3>Completion and Review:</h3>
+        <p>Users review their performance and can retry exercises.</p>
+
+        <h2>Technologies Used:</h2>
+        <ul>
+            <li>Front-End: HTML, CSS, JavaScript</li>
+            <li>Back-End: Flask (Python Framework)</li>
+            <li>Machine Learning Framework: TensorFlow and Keras</li>
+            <li>Other Tools: OpenCV for video processing</li>
+        </ul>
+
+        <h2>Installation and Setup:</h2>
+        <div class="installation">
+            <h3>Clone Repository:</h3>
+            <pre><code>git clone &lt;repository-url&gt;
+cd &lt;repository-directory&gt;</code></pre>
+            <h3>Set Up Virtual Environment:</h3>
+            <pre><code>python -m venv venv
+source venv/bin/activate  # For Linux/Mac
+venv\Scripts\activate  # For Windows</code></pre>
+            <h3>Install Dependencies:</h3>
+            <pre><code>pip install -r requirements.txt</code></pre>
+            <h3>Run the Application:</h3>
+            <pre><code>python app.py</code></pre>
+        </div>
+
+        <h2>Visual Aids:</h2>
+        <h2>Images</h2>
+        <div class="image-section"> <!-- <img src="image1.png" alt="Image 1">--> <img src="link2.png" alt="Image 2"
+                style="width: 750px; "> <img src="thank.png" alt="Image 3"> </div>
+        <div class="conclusion">
+            <h2>About Us</h2>
+            <p>We are Team Techies_133, a group from the IT 2026 batch at NIET, specializing in Information Technology.
+                Our team members are: Vaibhav Bajpai, Mohammad Ahmad, Mohammad Rayyan, Saumya Singh, Raj Jaiswal, and
+                Abhishek. Together, we are dedicated to leveraging technology to create impactful solutions.</p>
+
+
+            <div class="conclusion">
+                <h2>Conclusion</h2>
+                <p>This Sign Language Learning Web App aims to provide an interactive and effective platform for deaf
+                    and mute individuals to learn sign language through real-time feedback and engaging learning
+                    modules.</p>
+            </div>
+        </div>
+</body>
+
+</html>
